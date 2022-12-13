@@ -1,3 +1,6 @@
+/* 
+  COMMENT: with vanilla javascript
+*/
 /*
 const increment = document.getElementById("increment");
 const decrement = document.getElementById("decrement");
@@ -24,6 +27,24 @@ const increment = document.getElementById("increment");
 const decrement = document.getElementById("decrement");
 const resultEL = document.getElementById("result");
 
+// action identifiers
+const INCREMENT = "increment";
+const DECREMENT = "decrement";
+
+// action creators
+const incrementor = (value) => {
+  return {
+    type: INCREMENT,
+    payload: value,
+  };
+};
+const decrementor = (value) => {
+  return {
+    type: DECREMENT,
+    payload: value,
+  };
+};
+
 // initial state
 const initialState = {
   value: 0,
@@ -31,15 +52,15 @@ const initialState = {
 
 // create reducer function
 function counterReducer(state = initialState, action) {
-  if (action.type === "increment") {
+  if (action.type === INCREMENT) {
     return {
       ...state,
-      value: state.value + 1,
+      value: state.value + action.payload,
     };
-  } else if (action.type === "decrement") {
+  } else if (action.type === DECREMENT) {
     return {
       ...state,
-      value: state.value - 1,
+      value: state.value - action.payload,
     };
   } else {
     return state;
@@ -60,12 +81,8 @@ store.subscribe(render);
 
 // action dispatch
 increment.addEventListener("click", () => {
-  store.dispatch({
-    type: "increment",
-  });
+  store.dispatch(incrementor(5));
 });
 decrement.addEventListener("click", () => {
-  store.dispatch({
-    type: "decrement",
-  });
+  store.dispatch(decrementor(2));
 });
