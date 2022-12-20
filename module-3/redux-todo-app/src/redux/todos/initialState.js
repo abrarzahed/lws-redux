@@ -6,7 +6,7 @@ export const initialState = [
   },
   {
     id: 2,
-    title: "Learn react js",
+    title: "Learn redux js",
     completed: false,
     color: "red",
   },
