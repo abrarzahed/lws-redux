@@ -1,9 +1,43 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { added, allCompleted, clearCompleted } from "../redux/todos/actions";
+
 export default function Header() {
+  const dispatch = useDispatch();
+  const [todoInput, setTodoInput] = useState("");
+
+  // handle input changes
+  const handleInputChange = (e) => {
+    const { value } = e.target;
+    setTodoInput(value);
+  };
+
+  // handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(added(todoInput));
+    setTodoInput("");
+  };
+
+  // handle all completed
+  const handleAllComplete = () => {
+    dispatch(allCompleted());
+  };
+
+  // handle clear completed
+  const handleClearCompleted = () => {
+    dispatch(clearCompleted());
+  };
   return (
     <div>
-      <form className="flex items-center bg-gray-100 px-4 py-4 rounded-md">
+      <form
+        onSubmit={handleSubmit}
+        className="flex items-center bg-gray-100 px-4 py-4 rounded-md"
+      >
         <img src="./images/notes.png" className="w-6 h-6" alt="Add todo" />
         <input
+          value={todoInput}
+          onChange={handleInputChange}
           type="text"
           placeholder="Type your todo"
           className="w-full text-lg px-4 py-1 border-none outline-none bg-gray-100 text-gray-500"
@@ -15,7 +49,10 @@ export default function Header() {
       </form>
 
       <ul className="flex justify-between my-4 text-xs text-gray-500">
-        <li className="flex space-x-1 cursor-pointer">
+        <li
+          onClick={handleAllComplete}
+          className="flex space-x-1 cursor-pointer"
+        >
           <img
             className="w-4 h-4"
             src="./images/double-tick.png"
@@ -23,7 +60,12 @@ export default function Header() {
           />
           <span>Complete All Tasks</span>
         </li>
-        <li className="cursor-pointer">Clear completed</li>
+        <li
+          onClick={handleClearCompleted}
+          className="cursor-pointer text-red-400"
+        >
+          Clear completed
+        </li>
       </ul>
     </div>
   );

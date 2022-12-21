@@ -8,10 +8,6 @@ import {
   TOGGLED,
 } from "./actionTypes";
 
-// const nextTodoId = (todos) => {
-
-// }
-
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADDED:
