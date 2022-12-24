@@ -11,9 +11,7 @@ export default function Navbar() {
   return (
     <nav className="bg-slate-100 shadow-md">
       <div className="max-w-6xl mx-auto px-5 lg:px-0 flex justify-between py-3 items-center">
-        <a href="index.html">
-          <img className="h-10" src="./assets/lws.svg" alt="Learn with Sumit" />
-        </a>
+        <h2 className="font-bold text-2xl text-indigo-800">RDX BLOGS</h2>
         <button
           onClick={handleReset}
           className="bg-indigo-100 px-4 py-1 text-indigo-800 font-semibold rounded-full"
