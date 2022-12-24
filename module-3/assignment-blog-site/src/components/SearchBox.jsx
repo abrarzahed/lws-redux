@@ -14,7 +14,6 @@ export default function SearchBox() {
     }
     timeOut = setTimeout(() => {
       fn();
-      console.log(input);
     }, delay);
   }
 
