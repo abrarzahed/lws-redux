@@ -66,7 +66,7 @@ const reducer = (state = initialState, action) => {
       return state.filter((todo) => todo.id !== action.payload);
 
     case ALL_COMPLETED:
-      return state;
+      return action.payload;
 
     case CLEAR_COMPLETED:
       return state.filter((todo) => !todo.completed);

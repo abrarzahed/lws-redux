@@ -1,24 +1,38 @@
 import { allCompleted } from "../actions";
 
 const fetchTodos = (allTodos) => {
-  const completedTodos = allTodos.map((todo) => {
-    return {
-      ...todo,
-      completed: true,
-    };
-  });
+  console.log(allTodos);
   return async (dispatch) => {
-    await fetch("http://localhost:9000", {
-      method: "POST",
-      body: JSON.stringify({
-        todos: [...completedTodos],
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    });
+    const tempArr = [];
+    for (let todo of allTodos) {
+      const response = await fetch(`http://localhost:9000/todos/${todo.id}`, {
+        method: "PATCH",
+        body: JSON.stringify({
+          completed: true,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      });
 
-    dispatch(allCompleted());
+      const resTodo = await response.json();
+
+      tempArr.push(resTodo);
+    }
+    console.log(tempArr);
+    dispatch(allCompleted(tempArr));
+
+    // await fetch("http://localhost:9000/todos", {
+    //   method: "PATCH",
+    //   body: JSON.stringify({
+    //     completed: true,
+    //   }),
+    //   headers: {
+    //     "Content-type": "application/json; charset=UTF-8",
+    //   },
+    // });
+
+    // dispatch(allCompleted());
   };
 };
 

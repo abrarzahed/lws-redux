@@ -55,9 +55,10 @@ export const deleted = (todoId) => {
   };
 };
 
-export const allCompleted = () => {
+export const allCompleted = (todos) => {
   return {
     type: ALL_COMPLETED,
+    payload: todos,
   };
 };
 
