@@ -88,7 +88,6 @@ export default function Todo({ todo, completedTodoList }) {
 
       {completedTodoList && (
         <>
-          {" "}
           <span
             onClick={handleEnableEdit}
             className="mx-auto material-symbols-outlined cursor-pointer text-blue-500 font-bold"
