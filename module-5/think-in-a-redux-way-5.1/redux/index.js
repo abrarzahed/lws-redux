@@ -3,10 +3,10 @@ const { increment, decrement } = require("./counter/actions");
 
 // subscribe to state changes
 store.subscribe(() => {
-    console.log(store.getState());
+  console.log(store.getState());
 });
 
-// disptach actions
+// dispatch actions
 store.dispatch(increment());
 
 store.dispatch(increment());

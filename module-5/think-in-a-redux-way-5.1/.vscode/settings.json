@@ -1,8 +1,8 @@
 {
-  "editor.fontSize": 22,
-  "editor.lineHeight": 33,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 32,
   "window.zoomLevel": 0,
-  "terminal.integrated.fontSize": 18,
-  "editor.hover.delay": 1000,
+  "terminal.integrated.fontSize": 16,
+  "editor.hover.delay": 0,
   "workbench.colorTheme": "Learn with Sumit - Professional"
 }
