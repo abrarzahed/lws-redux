@@ -15,7 +15,6 @@ export default function Video() {
   const { id, link, title, tags } = video || {};
 
   const { videoId } = useParams();
-  console.log(videoId);
 
   useEffect(() => {
     dispatch(fetchVideoAsync(videoId));

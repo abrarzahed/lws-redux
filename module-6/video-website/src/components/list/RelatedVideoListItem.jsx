@@ -1,35 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function RelatedVideoListItem() {
+export default function RelatedVideoListItem({ relatedVideo = {} }) {
+  const { id, title, thumbnail, duration, author, views, date } = relatedVideo;
   return (
     <div className="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
       <div className="w-full flex flex-row gap-2 mb-4">
         <div className="relative w-[168px] h-[94px] flex-none duration-300 hover:scale-[1.03]">
-          <a href="video.html">
+          <Link to={`/videos/${id}`}>
             <img
-              src="https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg"
+              src={thumbnail}
               className="object-cover"
               alt="Some video title"
             />
-          </a>
+          </Link>
           <p className="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">
-            12:10
+            {duration}
           </p>
         </div>
 
         <div className="flex flex-col w-full">
-          <a href="/">
-            <p className="text-slate-900 text-sm font-semibold">
-              Some video title
-            </p>
-          </a>
-          <a
+          <Link to={`/videos/${id}`}>
+            <p className="text-slate-900 text-sm font-semibold">{title}</p>
+          </Link>
+          <Link
             className="text-gray-400 text-xs mt-2 hover:text-gray-600"
-            href="/"
+            to={`/videos/${id}`}
           >
-            Learn with Sumit
-          </a>
-          <p className="text-gray-400 text-xs mt-1">100K views . 23 Oct 2022</p>
+            {author}
+          </Link>
+          <p className="text-gray-400 text-xs mt-1">
+            {views} views . {date}
+          </p>
         </div>
       </div>
     </div>
