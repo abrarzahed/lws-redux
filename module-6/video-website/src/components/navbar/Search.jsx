@@ -1,11 +1,36 @@
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useMatch, useNavigate } from "react-router-dom";
+import { searched } from "../../features/filter/filterSlice";
+
 export default function Search() {
+  const { searchTerm } = useSelector((state) => state.filters);
+  // navigator and useMatch
+  const match = useMatch("/");
+  const navigate = useNavigate();
+
+  const dispatch = useDispatch();
+  const [input, setInput] = useState(searchTerm);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(searched(input));
+
+    // if user not in home page, with search redirect to home page
+    if (!match) {
+      navigate("/");
+    }
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
+        value={input}
         className="outline-none border-none mr-2"
         type="search"
         name="search"
         placeholder="Search"
+        onChange={(e) => setInput(e.target.value)}
       />
     </form>
   );
