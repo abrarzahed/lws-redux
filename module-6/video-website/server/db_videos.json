@@ -11,9 +11,13 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/6O4s7v28nlw",
       "thumbnail": "https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg",
-      "tags": ["javascript", "react", "tips"],
-      "likes": 0,
-      "unlikes": 0
+      "tags": [
+        "javascript",
+        "react",
+        "tips"
+      ],
+      "likes": 5,
+      "unlikes": 3
     },
     {
       "id": 2,
@@ -26,7 +30,10 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/N-U6AVcIPy4",
       "thumbnail": "https://i3.ytimg.com/vi/N-U6AVcIPy4/maxresdefault.jpg",
-      "tags": ["vscode", "tips"],
+      "tags": [
+        "vscode",
+        "tips"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -41,7 +48,10 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/4M7D3O2XX4o",
       "thumbnail": "https://i3.ytimg.com/vi/4M7D3O2XX4o/maxresdefault.jpg",
-      "tags": ["tailwind", "css"],
+      "tags": [
+        "tailwind",
+        "css"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -56,7 +66,11 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
       "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
-      "tags": ["debounce", "javascript", "tips"],
+      "tags": [
+        "debounce",
+        "javascript",
+        "tips"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -71,9 +85,13 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
       "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-      "tags": ["sass", "css", "ui"],
-      "likes": 0,
-      "unlikes": 0
+      "tags": [
+        "sass",
+        "css",
+        "ui"
+      ],
+      "likes": 22,
+      "unlikes": 5
     },
     {
       "id": 6,
@@ -86,8 +104,12 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
       "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
-      "tags": ["react", "router", "javascript"],
-      "likes": 0,
+      "tags": [
+        "react",
+        "router",
+        "javascript"
+      ],
+      "likes": 1,
       "unlikes": 0
     },
     {
@@ -101,7 +123,11 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
       "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg",
-      "tags": ["tailwind", "css", "ui"],
+      "tags": [
+        "tailwind",
+        "css",
+        "ui"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -116,7 +142,10 @@
       "views": "2.1k",
       "link": "https://www.youtube.com/embed/CHnTTzD1pAQ",
       "thumbnail": "https://i3.ytimg.com/vi/CHnTTzD1pAQ/maxresdefault.jpg",
-      "tags": ["javascript", "typescript"],
+      "tags": [
+        "javascript",
+        "typescript"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -131,7 +160,10 @@
       "views": "2.1k",
       "link": "https://www.youtube.com/embed/qz0aGYrrlhU",
       "thumbnail": "https://i3.ytimg.com/vi/qz0aGYrrlhU/maxresdefault.jpg",
-      "tags": ["html", "ui"],
+      "tags": [
+        "html",
+        "ui"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -140,14 +172,16 @@
       "title": "Basic Selections - Adobe Photoshop for Beginners - Class 1",
       "description": "In this first class I will be giving an introduction to Photoshop Interface. You will also learn how to take a new file and what about those options for the new file. After that I will guide you about basic selections using Rectangular Marquee and Elliptical Marquee tool. You will also learn the importance of Layers in Photoshop. ",
       "author": "GFX",
-
       "avatar": "https://yt3.ggpht.com/ytc/AMLnZu9Q0uLFYiA3gdnLMaNIproBAQzlzzyx1M_CqXQmuA=s48-c-k-c0x00ffffff-no-rj",
       "date": "Oct 15, 2021",
       "duration": "10:12",
       "views": "2.1k",
       "link": "https://www.youtube.com/embed/ZByhs9mDtDg",
       "thumbnail": "https://i3.ytimg.com/vi/ZByhs9mDtDg/maxresdefault.jpg",
-      "tags": ["photoshop", "ui"],
+      "tags": [
+        "photoshop",
+        "ui"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -156,14 +190,16 @@
       "title": "Vue JS 3 Tutorial for Beginners #1 - Introduction",
       "description": "Hey gang, in this Vue 3 tutorial series for beginners we'll learn Vue.js (using version 3 - the latest major version) from the ground up & use it to make a couple of nice web projects - a reaction timer & the beginning of a small, simple blog. In this video, I'll give you a quick intro to Vue & the new features Vue 3 has to offer.",
       "author": "Net Ninja",
-
       "avatar": "https://yt3.ggpht.com/ytc/AMLnZu_vx2QaoABpOD1MFk3nvLibUr8EDUv_Z_xyvOAk6A=s48-c-k-c0x00ffffff-no-rj",
       "date": "Oct 15, 2021",
       "duration": "10:12",
       "views": "2.1k",
       "link": "https://www.youtube.com/embed/YrxBCBibVo0",
       "thumbnail": "https://i3.ytimg.com/vi/YrxBCBibVo0/maxresdefault.jpg",
-      "tags": ["vue", "javascript"],
+      "tags": [
+        "vue",
+        "javascript"
+      ],
       "likes": 0,
       "unlikes": 0
     },
@@ -172,14 +208,16 @@
       "title": "Nuxt JS Crash Course",
       "description": "In this crash course we will build a complete project using Nuxt JS. In the meanwhile we will talk about components, pages, routing, vuex, state, getters, mutations, plugins, fetch, async and much more!",
       "author": "Laith",
-
       "avatar": "https://yt3.ggpht.com/t_TrBp9Vyn2nhEJh5uz6Z9f8JbxVA_KZvkJSLiJadQRCmFF_wkHmnTL1y8dCqP7VWU4lLLmBmw=s48-c-k-c0x00ffffff-no-rj",
       "date": "Oct 15, 2021",
       "duration": "10:12",
       "views": "2.1k",
       "link": "https://www.youtube.com/embed/Wdmi4k7sFzU",
       "thumbnail": "https://i3.ytimg.com/vi/Wdmi4k7sFzU/maxresdefault.jpg",
-      "tags": ["nuxt", "javascript"],
+      "tags": [
+        "nuxt",
+        "javascript"
+      ],
       "likes": 0,
       "unlikes": 0
     }
