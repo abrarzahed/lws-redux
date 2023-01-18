@@ -11,11 +11,13 @@ export default function VideoGrid() {
     (state) => state.videos
   );
 
-  const { tags, searchTerm, limit } = useSelector((state) => state.filters);
+  const { tags, searchTerm, limit, author } = useSelector(
+    (state) => state.filters
+  );
 
   useEffect(() => {
-    dispatch(fetchVideosAsync({ tags, searchTerm, limit }));
-  }, [dispatch, tags, searchTerm, limit]);
+    dispatch(fetchVideosAsync({ tags, searchTerm, limit, author }));
+  }, [dispatch, tags, searchTerm, limit, author]);
 
   // decide what to render
   let content;

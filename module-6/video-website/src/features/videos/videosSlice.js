@@ -13,8 +13,8 @@ const initialState = {
 // async thunk function to fetch videos
 export const fetchVideosAsync = createAsyncThunk(
   "videos/fetchVideos",
-  async ({ tags, searchTerm, limit }) => {
-    const videos = await getVideos({ tags, searchTerm, limit });
+  async ({ tags, searchTerm, limit, author }) => {
+    const videos = await getVideos({ tags, searchTerm, limit, author });
     return videos;
   }
 );

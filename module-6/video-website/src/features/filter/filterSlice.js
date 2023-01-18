@@ -3,6 +3,7 @@ const initialState = {
   tags: [],
   searchTerm: "",
   limit: 4,
+  author: "",
 };
 
 const filterSlice = createSlice({
@@ -21,9 +22,23 @@ const filterSlice = createSlice({
     limitUpdated: (state, action) => {
       state.limit = action.payload;
     },
+    authorUpdated: (state, action) => {
+      state.author = action.payload;
+    },
+    filterReset: (state) => {
+      state.tags = [];
+      state.searchTerm = "";
+      state.author = "";
+    },
   },
 });
 
 export default filterSlice.reducer;
-export const { tagSelected, tagRemoved, searched, limitUpdated } =
-  filterSlice.actions;
+export const {
+  tagSelected,
+  tagRemoved,
+  searched,
+  limitUpdated,
+  authorUpdated,
+  filterReset,
+} = filterSlice.actions;
