@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   tags: [],
   searchTerm: "",
+  limit: 4,
 };
 
 const filterSlice = createSlice({
@@ -17,8 +18,12 @@ const filterSlice = createSlice({
     searched: (state, action) => {
       state.searchTerm = action.payload;
     },
+    limitUpdated: (state, action) => {
+      state.limit = action.payload;
+    },
   },
 });
 
 export default filterSlice.reducer;
-export const { tagSelected, tagRemoved, searched } = filterSlice.actions;
+export const { tagSelected, tagRemoved, searched, limitUpdated } =
+  filterSlice.actions;

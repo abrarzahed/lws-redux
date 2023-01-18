@@ -1,151 +1,222 @@
 {
-    "videos": [
-        {
-            "id": 1,
-            "title": "যে ১০ টি ভুল বিগিনার রিয়্যাক্ট ডেভেলপাররা করে থাকেন",
-            "description": "আপনারা যারা বিগিনার হিসেবে রিয়্যাক্ট জেস নিয়ে কাজ করা শুরু করেছেন, তারা রিয়্যাক্ট এর বেশ কিছু কনসেপ্ট ঠিক মতো আয়ত্ত না করতে পারার কারণে বিচিত্র কিছু সমস্যার সম্মুখীন হন এবং শেষ পর্যন্ত বুঝতে না পেরে হতাশ হয়ে পড়েন। তাদের জন্যই এই ভিডিওটি। এই ভিডিওতে আমি এমন ১০টি সমস্যার কথা তুলে ধরেছি যেগুলো বিগিনার হিসেবে আপনারা অহরহ সম্মুখীন হবেন। আশা করি ভিডিওটি দেখলে আপনাদের এই সমস্যাগুলো নিয়ে আর কনফিউশন থাকবেনা।",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "May 10, 2022",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/6O4s7v28nlw",
-            "thumbnail": "https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg",
-            "tags": ["javascript", "react", "tips"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 2,
-            "title": "VS Code Snippets - Boost your productivity with User Snippets",
-            "description": "আমরা যখন Visual Studio Code Editor এ কাজ করি তখন অহরহ ব্যবহৃত কোড ব্লক গুলো আমাদের কে বারবার টাইপ করতে হয় এবং সামগ্রিকভাবে চিন্তা করলে এরকম ছোট ছোট ম্যনুয়াল কাজ আমাদের productivity অনেকাংশেই কমিয়ে দেয়। VS Code এর বিল্ট ইন ইউজার স্নিপেট ফিচারের মাধ্যমে আমরা কমন কাজগুলো স্নিপেট আকারে সাজিয়ে রেখে দিতে পারি এবং শর্টকাট কমান্ডের মাধ্যমে বড় বড় কোড ব্লক গুলো নিয়ে আসতে পারি। এই ভিডিওতে আপনারা এটাই জানতে পারবেন যে কিভাবে আমরা Visual Studio Code Editor এ কাস্টম স্নিপেট লিখতে পারি।",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "April 25, 2022",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/N-U6AVcIPy4",
-            "thumbnail": "https://i3.ytimg.com/vi/N-U6AVcIPy4/maxresdefault.jpg",
-            "tags": ["vscode", "tips"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 3,
-            "title": "Tailwind CSS 3 tutorial - Upgrade to Tailwind 3 | Tailwind CSS Bangla Tutorial",
-            "description": "Tailwind CSS v3.0 came with incredible performance gains, huge workflow improvements, and a seriously ridiculous number of new features. In this tutorial - I have tried to explain different new features of Tailwind CSS version 3, how to install tailwind css 3, how to upgrade from tailwind v2 to v3 etc.",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "March 11, 2022",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/4M7D3O2XX4o",
-            "thumbnail": "https://i3.ytimg.com/vi/4M7D3O2XX4o/maxresdefault.jpg",
-            "tags": ["tailwind", "css"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 4,
-            "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-            "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "Jan 06, 2022",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
-            "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
-            "tags": ["debounce", "javascript", "tips"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 5,
-            "title": "SASS Tutorial in English - Overview of SASS",
-            "description": "In this video, I have given a high level overview of popular CSS Pre-processor SASS which helps us managing our styles at scale. If you have a basic understanding of CSS & JavaScript, this 10 mins SASS Tutorial will help you getting started with SASS.",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "Nov 22, 2021",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
-            "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-            "tags": ["sass", "css", "ui"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 6,
-            "title": "React Router DOM v6 Bangla Tutorial - Breaking Changes - React Router 6 vs 5",
-            "description": "In this React Router DOM v6 Bangla tutorial, you will learn how to install react router dom 6, what are the breaking changes in react router 6, difference between react router 6 vs 5, how to upgrade from react router v5 to react router v6. ",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "Nov 08, 2021",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
-            "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
-            "tags": ["react", "router", "javascript"],
-            "likes": 0,
-            "unlikes": 0
-        },
-        {
-            "id": 7,
-            "title": "Tailwind CSS Tutorial Bangla - Introduction to Tailwind CSS",
-            "description": "Tailwind is a utility-first CSS framework to rapidly build modern websites without ever leaving your HTML. In this Tailwind CSS tutorial, I have given a short introduction and overview of Tailwind CSS in Bangla language. Also, I have explained, why Tailwind vs Bootstrap debate should be stopped as both are useful in their own ways.",
-            "author": "Learn with Sumit",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
-            "date": "Oct 15, 2021",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
-            "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg",
-            "tags": ["tailwind", "css", "ui"],
-            "likes": 0,
-            "unlikes": 0
-        }
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "title": "javascript"
-        },
-        {
-            "id": 2,
-            "title": "react"
-        },
-        {
-            "id": 3,
-            "title": "tips"
-        },
-        {
-            "id": 4,
-            "title": "vscode"
-        },
-        {
-            "id": 5,
-            "title": "tailwind"
-        },
-        {
-            "id": 6,
-            "title": "css"
-        },
-        {
-            "id": 7,
-            "title": "debounce"
-        },
-        {
-            "id": 8,
-            "title": "sass"
-        },
-        {
-            "id": 9,
-            "title": "ui"
-        },
-        {
-            "id": 10,
-            "title": "router"
-        }
-    ]
+  "videos": [
+    {
+      "id": 1,
+      "title": "যে ১০ টি ভুল বিগিনার রিয়্যাক্ট ডেভেলপাররা করে থাকেন",
+      "description": "আপনারা যারা বিগিনার হিসেবে রিয়্যাক্ট জেস নিয়ে কাজ করা শুরু করেছেন, তারা রিয়্যাক্ট এর বেশ কিছু কনসেপ্ট ঠিক মতো আয়ত্ত না করতে পারার কারণে বিচিত্র কিছু সমস্যার সম্মুখীন হন এবং শেষ পর্যন্ত বুঝতে না পেরে হতাশ হয়ে পড়েন। তাদের জন্যই এই ভিডিওটি। এই ভিডিওতে আমি এমন ১০টি সমস্যার কথা তুলে ধরেছি যেগুলো বিগিনার হিসেবে আপনারা অহরহ সম্মুখীন হবেন। আশা করি ভিডিওটি দেখলে আপনাদের এই সমস্যাগুলো নিয়ে আর কনফিউশন থাকবেনা।",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "May 10, 2022",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/6O4s7v28nlw",
+      "thumbnail": "https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg",
+      "tags": ["javascript", "react", "tips"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 2,
+      "title": "VS Code Snippets - Boost your productivity with User Snippets",
+      "description": "আমরা যখন Visual Studio Code Editor এ কাজ করি তখন অহরহ ব্যবহৃত কোড ব্লক গুলো আমাদের কে বারবার টাইপ করতে হয় এবং সামগ্রিকভাবে চিন্তা করলে এরকম ছোট ছোট ম্যনুয়াল কাজ আমাদের productivity অনেকাংশেই কমিয়ে দেয়। VS Code এর বিল্ট ইন ইউজার স্নিপেট ফিচারের মাধ্যমে আমরা কমন কাজগুলো স্নিপেট আকারে সাজিয়ে রেখে দিতে পারি এবং শর্টকাট কমান্ডের মাধ্যমে বড় বড় কোড ব্লক গুলো নিয়ে আসতে পারি। এই ভিডিওতে আপনারা এটাই জানতে পারবেন যে কিভাবে আমরা Visual Studio Code Editor এ কাস্টম স্নিপেট লিখতে পারি।",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "April 25, 2022",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/N-U6AVcIPy4",
+      "thumbnail": "https://i3.ytimg.com/vi/N-U6AVcIPy4/maxresdefault.jpg",
+      "tags": ["vscode", "tips"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 3,
+      "title": "Tailwind CSS 3 tutorial - Upgrade to Tailwind 3 | Tailwind CSS Bangla Tutorial",
+      "description": "Tailwind CSS v3.0 came with incredible performance gains, huge workflow improvements, and a seriously ridiculous number of new features. In this tutorial - I have tried to explain different new features of Tailwind CSS version 3, how to install tailwind css 3, how to upgrade from tailwind v2 to v3 etc.",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "March 11, 2022",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/4M7D3O2XX4o",
+      "thumbnail": "https://i3.ytimg.com/vi/4M7D3O2XX4o/maxresdefault.jpg",
+      "tags": ["tailwind", "css"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 4,
+      "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "Jan 06, 2022",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
+      "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
+      "tags": ["debounce", "javascript", "tips"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 5,
+      "title": "SASS Tutorial in English - Overview of SASS",
+      "description": "In this video, I have given a high level overview of popular CSS Pre-processor SASS which helps us managing our styles at scale. If you have a basic understanding of CSS & JavaScript, this 10 mins SASS Tutorial will help you getting started with SASS.",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "Nov 22, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
+      "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
+      "tags": ["sass", "css", "ui"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 6,
+      "title": "React Router DOM v6 Bangla Tutorial - Breaking Changes - React Router 6 vs 5",
+      "description": "In this React Router DOM v6 Bangla tutorial, you will learn how to install react router dom 6, what are the breaking changes in react router 6, difference between react router 6 vs 5, how to upgrade from react router v5 to react router v6. ",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "Nov 08, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
+      "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
+      "tags": ["react", "router", "javascript"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 7,
+      "title": "Tailwind CSS Tutorial Bangla - Introduction to Tailwind CSS",
+      "description": "Tailwind is a utility-first CSS framework to rapidly build modern websites without ever leaving your HTML. In this Tailwind CSS tutorial, I have given a short introduction and overview of Tailwind CSS in Bangla language. Also, I have explained, why Tailwind vs Bootstrap debate should be stopped as both are useful in their own ways.",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
+      "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg",
+      "tags": ["tailwind", "css", "ui"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 8,
+      "title": "Introduction & Installation - TypeScript Bangla ( বাংলা ) Tutorial Series",
+      "description": "TypeScript is a programming language developed and maintained by Microsoft. It is designed for the development of large applications and compiles to JavaScript. In this video, I have tried to explain What is TypeScript, Why we need this and benefits of using TypeScript.",
+      "author": "Learn with Sumit",
+      "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube.com/embed/CHnTTzD1pAQ",
+      "thumbnail": "https://i3.ytimg.com/vi/CHnTTzD1pAQ/maxresdefault.jpg",
+      "tags": ["javascript", "typescript"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 9,
+      "title": "HTML Tutorial for Beginners: HTML Crash Course",
+      "description": "HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.",
+      "avatar": "https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s48-c-k-c0x00ffffff-no-rj",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube.com/embed/qz0aGYrrlhU",
+      "thumbnail": "https://i3.ytimg.com/vi/qz0aGYrrlhU/maxresdefault.jpg",
+      "tags": ["html", "ui"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 10,
+      "title": "Basic Selections - Adobe Photoshop for Beginners - Class 1",
+      "description": "In this first class I will be giving an introduction to Photoshop Interface. You will also learn how to take a new file and what about those options for the new file. After that I will guide you about basic selections using Rectangular Marquee and Elliptical Marquee tool. You will also learn the importance of Layers in Photoshop. ",
+      "avatar": "https://yt3.ggpht.com/ytc/AMLnZu9Q0uLFYiA3gdnLMaNIproBAQzlzzyx1M_CqXQmuA=s48-c-k-c0x00ffffff-no-rj",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube.com/embed/ZByhs9mDtDg",
+      "thumbnail": "https://i3.ytimg.com/vi/ZByhs9mDtDg/maxresdefault.jpg",
+      "tags": ["photoshop", "ui"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 11,
+      "title": "Vue JS 3 Tutorial for Beginners #1 - Introduction",
+      "description": "Hey gang, in this Vue 3 tutorial series for beginners we'll learn Vue.js (using version 3 - the latest major version) from the ground up & use it to make a couple of nice web projects - a reaction timer & the beginning of a small, simple blog. In this video, I'll give you a quick intro to Vue & the new features Vue 3 has to offer.",
+      "avatar": "https://yt3.ggpht.com/ytc/AMLnZu_vx2QaoABpOD1MFk3nvLibUr8EDUv_Z_xyvOAk6A=s48-c-k-c0x00ffffff-no-rj",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube.com/embed/YrxBCBibVo0",
+      "thumbnail": "https://i3.ytimg.com/vi/YrxBCBibVo0/maxresdefault.jpg",
+      "tags": ["vue", "javascript"],
+      "likes": 0,
+      "unlikes": 0
+    },
+    {
+      "id": 12,
+      "title": "Nuxt JS Crash Course",
+      "description": "In this crash course we will build a complete project using Nuxt JS. In the meanwhile we will talk about components, pages, routing, vuex, state, getters, mutations, plugins, fetch, async and much more!",
+      "avatar": "https://yt3.ggpht.com/t_TrBp9Vyn2nhEJh5uz6Z9f8JbxVA_KZvkJSLiJadQRCmFF_wkHmnTL1y8dCqP7VWU4lLLmBmw=s48-c-k-c0x00ffffff-no-rj",
+      "date": "Oct 15, 2021",
+      "duration": "10:12",
+      "views": "2.1k",
+      "link": "https://www.youtube.com/embed/Wdmi4k7sFzU",
+      "thumbnail": "https://i3.ytimg.com/vi/Wdmi4k7sFzU/maxresdefault.jpg",
+      "tags": ["nuxt", "javascript"],
+      "likes": 0,
+      "unlikes": 0
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "title": "javascript"
+    },
+    {
+      "id": 2,
+      "title": "react"
+    },
+    {
+      "id": 3,
+      "title": "tips"
+    },
+    {
+      "id": 4,
+      "title": "vscode"
+    },
+    {
+      "id": 5,
+      "title": "tailwind"
+    },
+    {
+      "id": 6,
+      "title": "css"
+    },
+    {
+      "id": 7,
+      "title": "debounce"
+    },
+    {
+      "id": 8,
+      "title": "sass"
+    },
+    {
+      "id": 9,
+      "title": "ui"
+    },
+    {
+      "id": 10,
+      "title": "router"
+    }
+  ]
 }
