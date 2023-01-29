@@ -1,22 +1,10 @@
 {
   "transactions": [
     {
-      "name": "salary from ",
+      "name": "salary",
       "type": "income",
-      "amount": "30003",
+      "amount": 3000,
       "id": 1
-    },
-    {
-      "name": "cost for clean",
-      "type": "expense",
-      "amount": "100",
-      "id": 2
-    },
-    {
-      "name": "new earning",
-      "type": "income",
-      "amount": "40000",
-      "id": 3
     }
   ]
 }
