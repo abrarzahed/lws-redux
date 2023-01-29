@@ -1,14 +1,14 @@
-import Balance from "./components/Balance";
-import Form from "./components/Form";
 import Layout from "./components/Layout";
-import Transactions from "./components/transactions/Transactions";
-
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AllTransactions from "./pages/AllTransactions";
 function App() {
   return (
     <Layout>
-      <Balance />
-      <Form />
-      <Transactions />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/all-transactions" element={<AllTransactions />}></Route>
+      </Routes>
     </Layout>
   );
 }
