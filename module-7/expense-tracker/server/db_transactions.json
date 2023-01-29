@@ -1,10 +1,16 @@
 {
   "transactions": [
     {
-      "name": "salary",
+      "name": "Abrar Hussen Zahed",
       "type": "income",
-      "amount": 3000,
+      "amount": 20000,
       "id": 1
+    },
+    {
+      "name": "sd",
+      "type": "expense",
+      "amount": 3444,
+      "id": 2
     }
   ]
 }

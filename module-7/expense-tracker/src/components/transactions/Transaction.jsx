@@ -5,6 +5,7 @@ import {
   deleteTransactionAsync,
   editActive,
 } from "../../features/trasnsaction/transactionSlice";
+import numberWithCommas from "../../utils/thousandsSeparators";
 
 export default function Transaction({ transaction = {} }) {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ export default function Transaction({ transaction = {} }) {
     <li className={`transaction ${type}`}>
       <p>{name}</p>
       <div className="right">
-        <p>৳ {amount}</p>
+        <p>৳ {numberWithCommas(amount)}</p>
         <button className="link" onClick={handleEdit}>
           <img className="icon" src={editImage} alt="edit" />
         </button>
