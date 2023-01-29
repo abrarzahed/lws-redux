@@ -8,6 +8,12 @@ export default function Transactions() {
     (state) => state.transaction
   );
 
+  // dispatch
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchTransactionsAsync());
+  }, [dispatch]);
+
   // decide what to render
   let content = null;
   if (isLoading) content = <p className="error">Loading...</p>;
@@ -23,12 +29,6 @@ export default function Transactions() {
       <Transaction key={transaction.id} transaction={transaction} />
     ));
   }
-
-  // dispatch
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchTransactionsAsync());
-  }, [dispatch]);
 
   return (
     <>

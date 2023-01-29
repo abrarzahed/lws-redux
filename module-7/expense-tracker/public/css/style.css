@@ -163,9 +163,8 @@ label {
 }
 
 .cancel_edit {
-  display: none;
   margin-top: 10px;
-  background-color: #e6425e !important;
+  background: #e6425e !important;
 }
 
 .cancel_edit:hover {
