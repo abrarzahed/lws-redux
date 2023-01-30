@@ -3,14 +3,32 @@
     {
       "name": "Abrar Hussen Zahed",
       "type": "income",
-      "amount": 20000,
-      "id": 1
+      "amount": 2323,
+      "id": 3
     },
     {
-      "name": "sd",
+      "name": "Edit ipsum dolor sit amet conse",
       "type": "expense",
-      "amount": 3444,
-      "id": 2
+      "amount": 23232,
+      "id": 4
+    },
+    {
+      "name": "Abrar",
+      "type": "income",
+      "amount": 3232322,
+      "id": 5
+    },
+    {
+      "name": "Abrar Hussen Zahed",
+      "type": "expense",
+      "amount": 2323,
+      "id": 6
+    },
+    {
+      "name": "Abrar Hussen Zahed",
+      "type": "income",
+      "amount": 23,
+      "id": 7
     }
   ]
 }

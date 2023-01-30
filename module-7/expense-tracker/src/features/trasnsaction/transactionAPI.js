@@ -1,7 +1,28 @@
 import axios from "../../utils/axios";
 
-export const getTransactions = async () => {
-  const response = await axios.get("/transactions");
+export const getTransactions = async ({ limit, type, searchTerm }) => {
+  let queryString = "";
+  let response = null;
+
+  if (type !== "all") {
+    queryString += `type_like=${type}`;
+    response = await axios.get(`/transactions/?${queryString}`);
+  }
+
+  if (type === "all") {
+    queryString = "";
+    response = await axios.get(`/transactions/?${queryString}`);
+  }
+  if (searchTerm !== "") {
+    queryString += `&q=${searchTerm}`;
+    response = await axios.get(`/transactions/?${queryString}`);
+  }
+
+  if (limit > 0) {
+    queryString += `&_limit=${limit}`;
+    response = await axios.get(`/transactions/?${queryString}`);
+  }
+
   return response.data;
 };
 

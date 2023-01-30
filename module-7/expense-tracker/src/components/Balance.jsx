@@ -4,7 +4,7 @@ import numberWithCommas from "../utils/thousandsSeparators";
 export default function Balance() {
   const { transactions } = useSelector((state) => state.transaction);
 
-  const currentAmount = transactions.reduce(
+  const currentAmount = transactions?.reduce(
     (accumulator, currentTransaction) => {
       if (currentTransaction.type === "income") {
         return (accumulator += currentTransaction.amount);
@@ -19,7 +19,7 @@ export default function Balance() {
       <p>Your Current Balance</p>
       <h3>
         <span>৳ </span>
-        {transactions.length > 0 ? (
+        {transactions?.length > 0 ? (
           <span>{numberWithCommas(currentAmount)}</span>
         ) : (
           0

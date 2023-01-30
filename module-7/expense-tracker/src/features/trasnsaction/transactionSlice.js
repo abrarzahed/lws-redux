@@ -15,6 +15,10 @@ const initialState = {
   isError: false,
   error: "",
   itemToEdit: {},
+  filters: {
+    type: "all",
+    searchTerm: "",
+  },
 };
 
 /* 
@@ -22,8 +26,8 @@ const initialState = {
 */
 export const fetchTransactionsAsync = createAsyncThunk(
   "transaction/fetchTransactions",
-  async () => {
-    const transactions = await getTransactions();
+  async ({ limit, type, searchTerm }) => {
+    const transactions = await getTransactions({ limit, type, searchTerm });
     return transactions;
   }
 );
@@ -65,6 +69,12 @@ const transactionSlice = createSlice({
     },
     editDisabled: (state) => {
       state.itemToEdit = {};
+    },
+    typeAdded: (state, action) => {
+      state.filters.type = action.payload;
+    },
+    searchTermAdded: (state, action) => {
+      state.filters.searchTerm = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -143,4 +153,5 @@ const transactionSlice = createSlice({
 });
 
 export default transactionSlice.reducer;
-export const { editActive, editDisabled } = transactionSlice.actions;
+export const { editActive, editDisabled, typeAdded, searchTermAdded } =
+  transactionSlice.actions;
