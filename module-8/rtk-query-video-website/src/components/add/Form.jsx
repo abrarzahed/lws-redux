@@ -6,6 +6,7 @@ import TextInput from "../ui/TextInput";
 import Error from "../ui/Error";
 
 export default function Form() {
+  // eslint-disable-next-line no-unused-vars
   const [addVideo, { data: video, isLoading, isError, isSuccess }] =
     useAddVideoMutation();
 
@@ -132,7 +133,7 @@ export default function Form() {
         </div>
         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
           <button
-          disabled={isLoading}
+            disabled={isLoading}
             type="submit"
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-indigo-500"
           >
