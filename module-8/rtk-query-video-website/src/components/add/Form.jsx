@@ -16,7 +16,7 @@ export default function Form() {
     description: "",
     link: "",
     thumbnail: "",
-    uploadDate: "",
+    date: "",
     duration: "",
     views: "",
   });
@@ -40,7 +40,7 @@ export default function Form() {
       description: "",
       link: "",
       thumbnail: "",
-      uploadDate: "",
+      date: "",
       duration: "",
       views: "",
     });
@@ -107,8 +107,8 @@ export default function Form() {
               <TextInput
                 title="Upload Date"
                 onChange={handleInputChange}
-                name="uploadDate"
-                value={formData.uploadDate}
+                name="date"
+                value={formData.date}
               />
             </div>
 
