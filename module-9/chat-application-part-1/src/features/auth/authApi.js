@@ -3,10 +3,6 @@ import { userLoggedIn } from "./authSlice";
 
 export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
-    /* 
-      COMMENT: endpoints
-    */
-    //=== register  ===//
     register: builder.mutation({
       query: (data) => ({
         url: "/register",
@@ -16,6 +12,7 @@ export const authApi = apiSlice.injectEndpoints({
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;
+
           localStorage.setItem(
             "auth",
             JSON.stringify({
@@ -23,28 +20,29 @@ export const authApi = apiSlice.injectEndpoints({
               user: result.data.user,
             })
           );
+
           dispatch(
             userLoggedIn({
               accessToken: result.data.accessToken,
               user: result.data.user,
             })
           );
-        } catch (error) {
+        } catch (err) {
           // do nothing
         }
       },
     }),
-
-    //=== login  ===//
     login: builder.mutation({
       query: (data) => ({
-        url: "login",
+        url: "/login",
         method: "POST",
         body: data,
       }),
+
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;
+
           localStorage.setItem(
             "auth",
             JSON.stringify({
@@ -52,13 +50,14 @@ export const authApi = apiSlice.injectEndpoints({
               user: result.data.user,
             })
           );
+
           dispatch(
             userLoggedIn({
               accessToken: result.data.accessToken,
               user: result.data.user,
             })
           );
-        } catch (error) {
+        } catch (err) {
           // do nothing
         }
       },
@@ -66,4 +65,4 @@ export const authApi = apiSlice.injectEndpoints({
   }),
 });
 
-export const { useRegisterMutation, useLoginMutation } = authApi;
+export const { useLoginMutation, useRegisterMutation } = authApi;

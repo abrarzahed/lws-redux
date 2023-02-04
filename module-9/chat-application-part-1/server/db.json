@@ -5,6 +5,18 @@
       "password": "$2a$10$BBKOco7jIdt4FlMPvO7gteLEytsm7egIdoAe53GkIpgQNOpapEaN2",
       "name": "Abrar Hussen",
       "id": 1
+    },
+    {
+      "email": "abz@gmail.com",
+      "password": "$2a$10$Z0MSA7u61l2b4NBNIGO0X.zDqYFOt1/Wpx5cuRXJRfawo5iSDAbYS",
+      "name": "abrar zahed",
+      "id": 2
+    },
+    {
+      "email": "abcc@gmail.com",
+      "password": "$2a$10$jZfZMpDLSKkglzhHaqOTiOZyx..nK7S9ZI1jJgf2sh.UgI1U3KFUa",
+      "name": "abrar zahed",
+      "id": 3
     }
   ],
   "conversations": [
