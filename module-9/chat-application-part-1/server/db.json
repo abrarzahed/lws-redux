@@ -1,16 +1,10 @@
 {
   "users": [
     {
-      "email": "abc@gmail.com",
-      "password": "$2a$10$SkhhXZwHVb1yIPBYBkaJUO0Xp/5qh62Oj/tCTiWUl1YWz6K9KDzzG",
-      "name": "abrar zahed",
+      "email": "sumit@learnwithsumit.com",
+      "password": "$2a$10$jsHEoOIEYuJHF3JA5tS4cOd/rysz45WgeP6p.mnae8fNjgL7USK8m",
+      "name": "sumit",
       "id": 1
-    },
-    {
-      "email": "abcc@gmail.com",
-      "password": "$2a$10$W2E/zrFgy6pJ8amQaKP1bOf1oFsE6VQ/x.bZUqmGYE/6KQSIXe60C",
-      "name": "abrar zahed",
-      "id": 2
     }
   ],
   "conversations": [
@@ -47,7 +41,7 @@
           "id": 3
         }
       ],
-      "message": "How are you?",
+      "message": "Thank you",
       "timestamp": 1661976143678
     }
   ],
