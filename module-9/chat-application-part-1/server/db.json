@@ -2,21 +2,15 @@
   "users": [
     {
       "email": "abc@gmail.com",
-      "password": "$2a$10$BBKOco7jIdt4FlMPvO7gteLEytsm7egIdoAe53GkIpgQNOpapEaN2",
-      "name": "Abrar Hussen",
+      "password": "$2a$10$SkhhXZwHVb1yIPBYBkaJUO0Xp/5qh62Oj/tCTiWUl1YWz6K9KDzzG",
+      "name": "abrar zahed",
       "id": 1
     },
     {
-      "email": "abz@gmail.com",
-      "password": "$2a$10$Z0MSA7u61l2b4NBNIGO0X.zDqYFOt1/Wpx5cuRXJRfawo5iSDAbYS",
+      "email": "abcc@gmail.com",
+      "password": "$2a$10$W2E/zrFgy6pJ8amQaKP1bOf1oFsE6VQ/x.bZUqmGYE/6KQSIXe60C",
       "name": "abrar zahed",
       "id": 2
-    },
-    {
-      "email": "abcc@gmail.com",
-      "password": "$2a$10$jZfZMpDLSKkglzhHaqOTiOZyx..nK7S9ZI1jJgf2sh.UgI1U3KFUa",
-      "name": "abrar zahed",
-      "id": 3
     }
   ],
   "conversations": [
