@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { conversationsApi } from "../../features/conversations/conversationsApi";
 import { useGetUsersQuery } from "../../features/users/usersApi";
 import { validateEmail } from "../../utils/validateEmail";
 import Error from "../ui/Error";
@@ -8,9 +10,35 @@ export default function Modal({ open, control }) {
   const [message, setMessage] = useState("");
   const [shouldCheckUser, setShouldCheckUser] = useState(false);
 
+  const { user: loggedInUser } = useSelector((state) => state.auth) || {};
+  const { email: loggedInUserEmail } = loggedInUser || {};
+  const [responseError, setResponseError] = useState("");
+  const [conversations, setConversations] = useState(undefined);
+
+  const dispatch = useDispatch();
+
   const { data: participants } = useGetUsersQuery(to, {
     skip: !shouldCheckUser,
   });
+
+  useEffect(() => {
+    if (participants?.length > 0 && participants?.email !== loggedInUserEmail) {
+      // check conversation existence
+      dispatch(
+        conversationsApi.endpoints.getConversation.initiate({
+          currentUserEmail: loggedInUserEmail,
+          partnerEmail: to,
+        })
+      )
+        .unwrap()
+        .then((data) => {
+          setConversations(data);
+        })
+        .catch((err) => {
+          setResponseError("There was an error");
+        });
+    }
+  }, [participants, loggedInUserEmail, dispatch, to]);
 
   const debounceHandler = (fn, delay) => {
     let timeoutId;
@@ -33,6 +61,12 @@ export default function Modal({ open, control }) {
 
   const handleSearch = debounceHandler(doSearch, 500);
 
+  // handle submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Submitted");
+  };
+
   return (
     open && (
       <>
@@ -44,7 +78,7 @@ export default function Modal({ open, control }) {
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send message
           </h2>
-          <form className="mt-8 space-y-6">
+          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
                 <label htmlFor="to" className="sr-only">
@@ -80,7 +114,11 @@ export default function Modal({ open, control }) {
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:bg-gray-200 disabled:cursor-not-allowed"
+                disabled={
+                  conversations === undefined ||
+                  participants[0]?.email === loggedInUserEmail
+                }
               >
                 Send Message
               </button>
@@ -89,6 +127,11 @@ export default function Modal({ open, control }) {
             {participants?.length === 0 && (
               <Error message="user does not exist!" />
             )}
+            {participants?.length > 0 &&
+              participants[0]?.email === loggedInUserEmail && (
+                <Error message="you can not send message to yourself" />
+              )}
+            {responseError !== "" && <Error message={responseError} />}
           </form>
         </div>
       </>
