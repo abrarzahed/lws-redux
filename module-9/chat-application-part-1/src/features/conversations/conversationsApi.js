@@ -9,6 +9,10 @@ export const conversationsApi = apiSlice.injectEndpoints({
       query: (currentUserEmail) =>
         `/conversations?participants_like=${currentUserEmail}&_sort=timestamp&_order=desc&_page=1&_limit=5`,
     }),
+    getConversation: builder.query({
+      query: (currentUserEmail, partnerEmail) =>
+        `/conversations?participants_like=${currentUserEmail}-${partnerEmail}&participants_like=${partnerEmail}-${currentUserEmail}&`,
+    }),
   }),
 });
 
