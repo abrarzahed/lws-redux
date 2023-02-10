@@ -34,20 +34,20 @@ export default function ChatItems() {
       const { name, email: otherUserEmail } = users.find(
         (usr) => usr.email !== email
       );
-      return (
-        <li key={id}>
-          <Link to={`/inbox/${id}`}>
-            <ChatItem
-              avatar={gravatarUrl(otherUserEmail, {
-                size: 80,
-              })}
-              name={name}
-              lastMessage={message}
-              lastTime={moment(timestamp).fromNow()}
-            />
-          </Link>
-        </li>
-      );
+      if (otherUserEmail) {
+        return (
+          <li key={id}>
+            <Link to={`/inbox/${id}`}>
+              <ChatItem
+                avatar={gravatarUrl(otherUserEmail)}
+                name={name}
+                lastMessage={message}
+                lastTime={moment(timestamp).fromNow()}
+              />
+            </Link>
+          </li>
+        );
+      }
     });
   }
 

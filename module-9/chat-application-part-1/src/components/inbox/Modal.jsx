@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { conversationsApi } from "../../features/conversations/conversationsApi";
+import {
+  conversationsApi,
+  useAddConversationMutation,
+  useEditConversationMutation,
+} from "../../features/conversations/conversationsApi";
 import { useGetUsersQuery } from "../../features/users/usersApi";
 import { validateEmail } from "../../utils/validateEmail";
 import Error from "../ui/Error";
@@ -20,6 +24,11 @@ export default function Modal({ open, control }) {
   const { data: participants } = useGetUsersQuery(to, {
     skip: !shouldCheckUser,
   });
+
+  const [addConversation, { isSuccess: isAddConversationSuccess }] =
+    useAddConversationMutation();
+  const [editConversation, { isSuccess: isEditConversationSuccess }] =
+    useEditConversationMutation();
 
   useEffect(() => {
     if (participants?.length > 0 && participants?.email !== loggedInUserEmail) {
@@ -64,7 +73,26 @@ export default function Modal({ open, control }) {
   // handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submitted");
+    if (conversations?.length > 0) {
+      // edit conversation
+      editConversation({
+        id: conversations[0].id,
+        data: {
+          participants: `${loggedInUserEmail}-${participants[0]?.email}`,
+          users: [loggedInUser, participants],
+          message,
+          timestamp: new Date().getTime(),
+        },
+      });
+    } else if (conversations?.length === 0) {
+      // add conversation
+      addConversation({
+        participants: `${loggedInUserEmail}-${participants[0]?.email}`,
+        users: [loggedInUser, participants],
+        message,
+        timestamp: new Date().getTime(),
+      });
+    }
   };
 
   return (
