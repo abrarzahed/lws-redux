@@ -1,15 +1,20 @@
-import { shallowEqual, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { selectFilter } from "../features/filters/filterSelectore";
+import {
+  selectAllVideos,
+  selectUnWatchedVideos,
+  selectWatchedVideos,
+} from "../features/videos/videosSelectors";
 import VideoItem from "./VideoItem";
 
 export default function AllVideos() {
-  const filter = useSelector((state) => state.filters.watchStatus);
+  const filter = useSelector(selectFilter);
 
-  const videos = useSelector((state) =>
-    state.videos.videos.filter((v) => {
-      if (filter === "all") return true;
-      else return v.watched === filter;
-    })
-  );
+  const videos = useSelector((state) => {
+    if (filter === "all") return selectAllVideos(state);
+    if (filter === true) return selectWatchedVideos(state);
+    if (!filter) return selectUnWatchedVideos(state);
+  });
 
   console.log("[AllVideos] renders");
 
