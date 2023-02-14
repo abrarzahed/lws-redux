@@ -1,16 +1,16 @@
 import { useSelector } from "react-redux";
-import { selectMemoizedWatchedVideos } from "../features/videos/videosSelectors";
+import { selectMemoizedUnwatchedVideos } from "../features/videos/videosSelectors";
 import VideoItem from "./VideoItem";
 
 export default function WatchedVideos() {
-  const watchedVideos = useSelector(selectMemoizedWatchedVideos);
+  const unwatchedVideos = useSelector(selectMemoizedUnwatchedVideos);
 
-  console.log("[WatchedVideos] renders");
+  console.log("[unwatchedVideos] renders");
 
   return (
     <div>
       <ul className="divide-y divide-slate-200">
-        {watchedVideos.map((video) => (
+        {unwatchedVideos.map((video) => (
           <VideoItem key={video.id} video={video} />
         ))}
       </ul>
